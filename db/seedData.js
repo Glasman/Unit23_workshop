@@ -29,9 +29,9 @@ async function createTables() {
         );
         CREATE TABLE boardGames (
             id SERIAL PRIMARY KEY,
-            name VARCHAR(255) UNIQUE NOT NULL,
-            description TEXT NOT NULL,
-            price INTEGER NOT NULL,
+            name VARCHAR(255) UNIQUE,
+            description TEXT,
+            price INTEGER,
             "inStock" BOOLEAN DEFAULT false,
             "isPopular" BOOLEAN DEFAULT false,
             "imgUrl" VARCHAR(255) DEFAULT 'https://i.imgur.com/3J3wW9S.png'

@@ -24,7 +24,7 @@ async function getBoardGameById(id) {
     } catch (error) {
         throw error;
     }
-}
+}``
 
 // POST - /api/board-games - create a new board game
 async function createBoardGame(body) {
